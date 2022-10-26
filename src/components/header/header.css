@@ -1,0 +1,53 @@
+
+
+
+.header {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #344955;
+    opacity: 75%;
+    position: relative;
+    
+    top: 0;
+}
+
+
+.img-ludo {
+    display:block;
+    width: 50vw; 
+   float: left;
+   margin-right: 10%;
+  margin-top: 100px;
+  margin-left: 8%;
+   border: 3px solid red;
+}
+
+.presentation-container {
+    display: block;
+    background-color: #F9AA33;
+    width: 250px;
+    height: 110px;
+    margin-left: 70%;
+   position: relative;
+   top: 130px;
+   transform: rotate(-15deg);
+
+}
+
+.presentation {
+    color: #344955;
+    font-size: 5rem;
+    text-align: center;
+   
+}
+.nom {
+    position: relative;
+    top: 130px;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 5rem;
+    color: #fff;
+    margin-top: 60px;
+}

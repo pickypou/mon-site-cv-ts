@@ -3,11 +3,12 @@ import { styled } from '@mui/material/styles';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
+import DehazeIcon from '@mui/icons-material/Dehaze';
 
 const AntTabs = styled(Tabs)({
-  borderBottom: '1px solid #e8e8e8',
+  borderBottom: '1px solid #F9AA33',
   '& .MuiTabs-indicator': {
-    backgroundColor: '#1890ff',
+    backgroundColor: '#F9AA33',
   },
 });
 
@@ -20,7 +21,7 @@ const AntTab = styled((props: StyledTabProps) => <Tab disableRipple {...props} /
     },
     fontWeight: theme.typography.fontWeightRegular,
     marginRight: theme.spacing(1),
-    color: 'rgba(0, 0, 0, 0.85)',
+    color: '#F9AA33',
     fontFamily: [
       '-apple-system',
       'BlinkMacSystemFont',
@@ -34,15 +35,15 @@ const AntTab = styled((props: StyledTabProps) => <Tab disableRipple {...props} /
       '"Segoe UI Symbol"',
     ].join(','),
     '&:hover': {
-      color: '#40a9ff',
+      color: '##F9AA33',
       opacity: 1,
     },
     '&.Mui-selected': {
-      color: '#fff',
+      color: '#F9AA33',
       fontWeight: theme.typography.fontWeightMedium,
     },
     '&.Mui-focusVisible': {
-      backgroundColor: '#d1eaff',
+      backgroundColor: '#F9AA33',
     },
   }),
 );
@@ -65,9 +66,9 @@ const StyledTabs = styled((props: StyledTabsProps) => (
     backgroundColor: 'transparent',
   },
   '& .MuiTabs-indicatorSpan': {
-    maxWidth: 70,
+    maxWidth: 90,
     width: '100%',
-    backgroundColor: '#ffffff',
+    backgroundColor: '#F9AA33',
   },
 });
 
@@ -82,9 +83,9 @@ const StyledTab = styled((props: StyledTabProps) => (
   fontWeight: theme.typography.fontWeightRegular,
   fontSize: theme.typography.pxToRem(17),
   marginRight: theme.spacing(1),
-  color: 'rgba(255, 255, 255, 0.7)',
+  color: '#F9AA33',
   '&.Mui-selected': {
-    color: '#fff',
+    color: '#F9AA33',
   },
   '&.Mui-focusVisible': {
     backgroundColor: 'rgba(100, 95, 228, 0.32)',
@@ -100,15 +101,18 @@ export default function CustomizedTabs() {
 
   return (
    
-      <Box sx={{ bgcolor: '#0E0B0B' }}>
+      <Box sx={{ bgcolor: '#344955', opacity: '75%' }}>
         <StyledTabs
           value={value}
           onChange={handleChange}
           aria-label="styled tabs example"
         >
-          <StyledTab label="Workflows" />
-          <StyledTab label="Datasets" />
-          <StyledTab label="Connections" />
+          <StyledTab label="Accueil" />
+          <StyledTab label="Compétence" />
+          <StyledTab label="Experience" />
+          <StyledTab label="Portfolio" />
+          <StyledTab label="Formation" />
+          <StyledTab label="Contact" />
         </StyledTabs>
         <Box sx={{ p: 3 }} />
       </Box>
