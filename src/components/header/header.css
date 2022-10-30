@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     background-color: #344955;
     opacity: 75%;
     position: relative;
@@ -19,9 +19,10 @@
     width: 50vw; 
    float: left;
    margin-right: 10%;
-  margin-top: 100px;
+  margin-top: 97px;
   margin-left: 8%;
-   border: 3px solid red;
+
+  
 }
 
 .presentation-container {
@@ -43,11 +44,23 @@
    
 }
 .nom {
+   animation: nom 4S ;
     position: relative;
     top: 130px;
     text-transform: capitalize;
     font-weight: 700;
     font-size: 5rem;
-    color: #fff;
+   color: #fff;
     margin-top: 60px;
+    transition: display 2s;
+   
 }
+@keyframes nom {
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+

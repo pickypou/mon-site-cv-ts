@@ -3,7 +3,7 @@ import { styled } from '@mui/material/styles';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
-import DehazeIcon from '@mui/icons-material/Dehaze';
+
 
 const AntTabs = styled(Tabs)({
   borderBottom: '1px solid #F9AA33',
@@ -107,7 +107,8 @@ export default function CustomizedTabs() {
           onChange={handleChange}
           aria-label="styled tabs example"
         >
-          <StyledTab label="Accueil" />
+         
+          <StyledTab label="Accueil" />        
           <StyledTab label="Compétence" />
           <StyledTab label="Experience" />
           <StyledTab label="Portfolio" />

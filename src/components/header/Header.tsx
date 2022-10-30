@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './header.css'
-import ludo from './ludo-2.jpg'
+import ludo from './ludo-2.4.png'
 
 
 export function Header() {
