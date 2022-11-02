@@ -8,7 +8,7 @@ import { Competences } from "./components/competences/Competence";
 function App() {
   return (
     <div className="App">
-      <Navbar  />
+     <Navbar />
       <Header />
       <Competences />
     </div>
